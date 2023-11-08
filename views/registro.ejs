@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head>    
     <title>Mi Página Estilizada</title>
     <style>
         body {
@@ -74,8 +74,18 @@
     </header>
 
     <section>
-        <h2>REGISTRO</h2>
-        <p>Contenido de la sección con texto.</p>
+        <div class="container mt-4">
+            <div class="card border-secondary">
+                <div class="card-header">Nuevo Registro</div>
+                <div class="card-body"></div>
+                <form action="/index.ejs" method="post">
+                    <div class="mb-3">
+                        <label for="usuario" class="form-label">Usuarios</label>
+                        <input type="text" class="form-control" id="usuario" name="usuario" tabindex="1">
+    
+                    </div>
+                        </select>
+                    </div>
     </section>
 
     <section>
@@ -87,7 +97,5 @@
         <h2>Sección de Video</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/tu_codigo_de_video" frameborder="0" allowfullscreen></iframe>
     </section>
-
-    <footer>
-        <p>Pie de página</p>
-    </footer>
+</body>
+</html>

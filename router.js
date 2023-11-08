@@ -13,21 +13,28 @@ router.get('/admin', (req, res)=>{
 })
 })
 
-
+//Ruta par enlazar la vista de movil
 router.get('/movil',(req, res)=>{
     res.render('movil.ejs')
 })
-
-router.get('/index',(req, res)=>{
+//Ruta par enlazar la vista de la pagina principal
+router.get('/',(req, res)=>{
     res.render('index.ejs')
 })
-
+//Ruta par editar registros de la base de datos
+router.get('/editar',(req, res)=>{
+    res.render('editar.ejs')
+})
+//Ruta par enlazar la vista de registros
 router.get('/registro',(req, res)=>{
     res.render('registro.ejs')
 })
-
+//Ruta par enlazar la vista de administrasdor
 router.get('/admin',(req, res)=>{
     res.render('admin.ejs')
 })
+//Ruta para guardar los datos del registro del usuario
+const datos = require('./controllers/datos');
+router.post('/save', datos.save);
 
 module.exports = router;

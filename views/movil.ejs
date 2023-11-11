@@ -1,25 +1,34 @@
+<!-- Front de la pagina principal -->
 <!DOCTYPE html>
 <html>
+
+<!-- FAVICON -->
+<link rel="shortcut icon" href="/favicon.ico">
 <head>
-    <title>Mi Página Estilizada</title>
+    <title>YO COMO APP MOVIL</title>
+<!-- Se pasa a adar estilo a la pagina -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 10;
             padding: 0;
-            background-color: #f7f7f7;
+            background-color: #D1B5FF;
         }
 
         header {
-            background-color: #333;
+            background-color: #6E368F;
+            font-size:x-large;
             color: #fff;
             padding: 10px;
             text-align: center;
         }
 
         nav ul {
+          
             list-style-type: none;
-            padding: 0;
+            padding: 120;
         }
 
         nav li {
@@ -33,18 +42,14 @@
         }
 
         section {
-            margin: 20px;
+            margin: 35px;
             padding: 20px;
+            font-size:larger;
             background-color: #fff;
             border: 1px solid #ccc;
             border-radius: 5px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
+        }    
+           
         iframe {
             max-width: 100%;
         }
@@ -58,34 +63,116 @@
             width: 100%;
             bottom: 0;
         }
+        /* style para dividir horizontalmente */
+        /*primer selection*/
+        .contenedor1 {
+            display: flex;
+            justify-content: space-between; 
+            /*background-color: #370e0e;*/
+            padding: 20px;
+        }
+        .bloque1 {
+            width: 70%; 
+            /*background-color: #441ce5;*/
+            padding: 10px;
+            box-sizing: border-box; 
+         }
+        /*segundo selection*/
+         .contenedor2 {
+            display: flex;
+            justify-content: space-between; 
+            /*background-color: #370e0e;*/
+            padding: 20px;
+        }
+        .bloque2 {
+            width: 70%; 
+            /*background-color: #441ce5;*/
+            padding: 10px;
+         }
+         /*tercer selection*/
+         .contenedor3 {
+            display: flex;
+            justify-content: space-between; 
+            /*background-color: #370e0e;*/
+            padding: 20px;
+        }
+        .bloque3 {
+            width: 70%;
+            /*background-color: #441ce5;*/
+            padding: 10px;
+         }
+
+          /*cuarto selection*/
+          .contenedor4 {
+            display: flex;
+            justify-content: space-between; 
+            /*background-color: #370e0e;*/
+            padding: 20px;
+        }
+        .bloque4 {
+            width: 70%; 
+            /*background-color: #441ce5;*/
+            padding: 10px;
+         }
+
     </style>
 </head>
 <body>
-
+<!-- Sección para en nav-->
     <header>
-        <h1>CIAMAS</h1>
+        <h1>YO COMO APP MOVIL</h1>
         <nav>
             <ul>
                 <li><a href="/">¿Quien soy?</a></li>
                 <li><a href="/movil">Yo como App Movil</a></li>
                 <li><a href="/registro">Registrate Conmigo</a></li>
+                <li><a href="/admin">Registros</a></li>
             </ul>
         </nav>
     </header>
-
-    <section>
-        <h2>APLICATIVO MOVIL</h2>
-        <p>Contenido de la sección con texto.</p>
+<!-- Sección para la funcionalidad de CIAMAS-->
+    <section class="contenedor1">
+        <div class="bloque1">
+            <h2>Funcionalidad planeada para app movil</h2>
+            <p>Nuestra idea principal no tiene como fin una pagina web, desde un principio pensamos en ciamas como un prototipo de aplicación para dispositivos moviles debido a que en un momento requerido, el hecho de acceder a una pagina web no es la manera mas viable de brindar nuestra atención al usuario, por eso recurrimos a estos dispositivos que siempre tenemos a la mano.<br></br>Por esta razón nuestra funcionalidad va de la mano de un aplicativo movil para el envio de mensajes como lo es WhatsApp, a continuación mediante un video queremos mostrar cual es la forma en que trabaja CIAMAS:</p>
+        </div>
+        <div class="bloque1">
+            <iframe width="760" height="315" src="https://www.youtube.com/embed/rT2WaJm2Se4" frameborder="0" allowfullscreen></iframe>            
+        </div>
     </section>
-
-    <section>
-        <h2>Sección de Imagen</h2>
-        <img src="ruta_de_tu_imagen.jpg" alt="Descripción de la imagen">
+<!-- Desarrollo de interfaz grafica  -->
+    <section class="contenedor2">
+        <div class="bloque2">
+            <h2>Como quisieramos que se viera CIAMAS</h2>
+            <p>Continuando con la idea y planeación de CIAMAS, quisimos ejemplificar su interfaz grafica mediante el uso Mock Ups mediante la aplicación POP by Marvel<br>Teniendo en cuenta esto, a continuación mostrare un video el cual nos muestra los mockups:</br></p>
+        </div>
+        <div class="bloque2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/asyCGc7ksCs" frameborder="0" allowfullscreen></iframe>            
+        </div>
+        <div class="bloque2">
+            <h2>Requerimientos</h2>
+            <p>Como podemos ver en el video CIAMAS primero te pedira los permisos necesarios para funcionar lo cual es muy importante y esencial para seguir con su proceso. <br>Luego pedira tus datos, con los cuales trabajara para que cuando sea necesario y el usuario lo requiera CIAMAS pueda saltar a la acción y ayudar en lo posible.</br> </p>
+        </div>
     </section>
-
-    <section>
-        <h2>Sección de Video</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/tu_codigo_de_video" frameborder="0" allowfullscreen></iframe>
+ <!-- Ultima sección para la parte de conocenos, y datos de los creadores-->   
+    <section class="contenedor4">
+        <div class="bloque4">
+            <h2>¡Conocenos!</h2>
+            <p>CIAMAS esta creado para prevenir circunstancias desafortunadas que puedan poner en riesgo tu seguidad, Es un software aplicativo para la protección y asistencia al usuario. Atenderemos todas tus sugerencia para mejorar.<br>Creada por:</p>
+        </div>
+        <div class="bloque4">
+            <br><br>
+            <p><i class="fas fa-user"></i>  Carlos Andres Carlos Salazar </p>
+            <p><i class="fas fa-phone"></i>  +57 350 340 5629</p>
+            <p><i class="fas fa-envelope"></i>  cacastro@ucundinamarca.edu.co</p>
+        </div>
+        <div class="bloque4">
+            <br><br>
+            <p><i class="fas fa-user"></i>  Angela Mercedes Sanchez Hernandez </p>
+            <p><i class="fas fa-phone"></i>  +57 310 296 3906</p>
+            <p><i class="fas fa-envelope"></i>  angelamsanchez@ucundinamarca.edu.co</p>
+        </div>
+        
     </section>
 </body>
 </html>

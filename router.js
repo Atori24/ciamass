@@ -31,10 +31,16 @@ router.get('/registro',(req, res)=>{
 })
 //Ruta par enlazar la vista de administrasdor
 router.get('/admin',(req, res)=>{
-    res.render('admin.ejs')
+    res.render('admin.ejs') 
 })
 //Ruta para guardar los datos del registro del usuario
 const datos = require('./controllers/datos');
 router.post('/save', datos.save);
+
+
+// //Ruta par enlazar primera imagen NO FUNCIONO 
+// router.get('/imagenes/ccciamas',(req, res)=>{
+//     res.render('/ccciamas.jpeg')
+// })
 
 module.exports = router;

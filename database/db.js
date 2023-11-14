@@ -2,10 +2,10 @@
 const mysql= require('mysql');
 
 const conexion = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'ciamas'
+    host: 'sql302.infinityfree.com',
+    user: 'if0_35418244',
+    password: 'D4EwutSBKMqLP6',
+    database: 'if0_35418244_ciamas'
 })
 
 //Procederemos a colocar el comando para comprobar que la base de datos este funcionando 

@@ -16,3 +16,22 @@ exports.save = (req, res)=>{
         }
     })
 }
+
+
+
+//Edicion del registro
+exports.update=(req,res)=>{
+    const id = req.body.id;
+    const nombre = req.body.nombre;
+    const celular = req.body.celular;
+    const contacto = req.body.contacto;
+    const celcontacto = req.body.celcontacto;
+    const palaclave = req.body.palaclave;
+    conexion.query('UPDATE usuario SET ? WHERE id=?',[{ nombre:nombre, celular:celular, contacto:contacto, celcontacto:celcontacto, palaclave:palaclave}, id],(error,results)=>{
+      if(error){
+          console.log(error);
+      }else{
+          res.redirect('/admin');
+      }
+    })
+};
